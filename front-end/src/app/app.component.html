@@ -1,0 +1,13 @@
+<nav role="navigation">
+    <a routerLink="/signup" title="Sign Up">Sign Up</a>
+    <span> | </span>
+    <a routerLink="/signin" title="Sign In" *ngIf="isloggedIn()">Sign In</a>
+    <span> | </span>
+    <a routerLink="/signin" title="Sign In" *ngIf="isloggedIn()">Sign Out</a>
+    <span> | </span>
+    <a routerLink="/posts" title="Post">Posts</a>
+    <span> | </span>
+    <a routerLink="/user" title="Profile">Profile</a>
+    <hr>
+  </nav>
+<router-outlet></router-outlet>

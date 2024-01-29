@@ -1,0 +1,16 @@
+<h1>User Profile: {{user?.username}}</h1>
+
+<h5>Name: {{user?.firstName}} {{user?.lastName}}, {{user?.age}}</h5>
+<h5>Location: {{user?.city}} {{user?.state}}</h5>
+
+<h2>Tweets</h2>
+
+<div *ngIf="postList">
+    <div *ngFor="let post of postList">
+        <h2>{{post.title}}</h2>
+        <p>{{post.content}}</p>
+        <button><a [routerLink]="['post', post.postId]">Edit Post</a></button> <br>
+        <button><a deletePost(post.postId)>Delete Post</a></button>
+        <hr>
+    </div>
+</div>

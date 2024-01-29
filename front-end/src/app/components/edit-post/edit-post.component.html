@@ -1,0 +1,11 @@
+<form (ngSubmit)="editPost()">
+    <h1>Edit Post</h1>
+    <span>Title  </span>
+    <input placeholder="Title" type="text" name="coffee" [(ngModel)]="edittedPost.title"><br><br>
+    <span>Content </span>
+    <input placeholder="Content" type="text" name="content" [(ngModel)]="edittedPost.content"><br><br>
+    
+    <button>
+        Edit Post
+    </button>
+</form>
