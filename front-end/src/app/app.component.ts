@@ -24,13 +24,13 @@ export class AppComponent implements OnInit {
 
 
   ngOnInit(): void {
-    this.userService.loggedIn.subscribe((loggedIn) => {
+    this.userService.loggedIn.subscribe((loggedIn: boolean) => {
       this.isLoggedIn = loggedIn;
     });
   }
 
   isloggedIn() {
-    this.userService.loggedIn.subscribe((loggedIn) => {
+    this.userService.loggedIn.subscribe((loggedIn: boolean) => {
       this.isLoggedIn = loggedIn;
       
       if(!this.isLoggedIn) {
