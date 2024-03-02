@@ -9,7 +9,7 @@ import { BehaviorSubject } from 'rxjs';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent implements OnInit {
-  title = 'final-project';
+  title = 'tweeter-app';
   isLoggedIn: boolean = false;
   private tokenKey: string = "myPostToken";
 
